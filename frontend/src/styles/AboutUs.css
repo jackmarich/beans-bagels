@@ -1,0 +1,161 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+body,
+html {
+  height: 100%; /* Ensure the body and HTML take full height */
+}
+
+.about-us-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full height for the page */
+}
+
+.about-us-content {
+  flex-grow: 1; /* This will make the content take up available space */
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #ffffff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #800000;
+  font-family: "Playfair Display", serif;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #800000;
+}
+
+/* About Us Hero Section */
+.about-us-hero {
+  height: 60vh;
+  background-color: #800000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+}
+
+.about-hero-content {
+  max-width: 700px;
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+.about-hero-title {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-family: "Playfair Display", serif;
+}
+
+.about-hero-subtitle {
+  font-size: 18px;
+  font-weight: 300;
+  font-family: "Playfair Display", serif;
+}
+
+/* About Us Info Section */
+.about-info {
+  padding: 100px 40px;
+  background-color: #ffffff;
+  flex-grow: 1; /* Ensure this section takes available space */
+}
+
+.about-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #800000;
+  font-family: "Playfair Display", serif;
+}
+
+.about-text {
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  color: #555;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+/* Footer */
+.footer {
+  background-color: #800000;
+  color: white;
+  padding: 40px 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content p {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.footer a {
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #4b0000;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
