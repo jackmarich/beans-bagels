@@ -19,3 +19,4 @@ backend/instance/
 # Ignore OS-specific files
 .DS_Store
 Thumbs.db
+node_modules
