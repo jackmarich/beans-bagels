@@ -1,4 +1,7 @@
 # NOT IN USE ANYMORE
+Decided to start from scratch and create a new full stack site for my business. You can check it out on my page if interested.
+
+---
 
 # Bean's Bagels Web Application
 
